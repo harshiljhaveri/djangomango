@@ -1,0 +1,11 @@
+{% extends 'administrative/base.html' %}
+{% for i in kiddos %}
+<h1>{{ i.first_name }}</h1>
+<h2>{{ i.photograph }}</h2>
+<h3>{{ i.course }}</h3>
+<h4>{{ i.grade2018 }}</h4>
+<h4>{{ i.grade2017 }}</h4>
+<h4>{{ i.grade2016 }}</h4>
+<h4>{{ i.grade2015 }}</h4>
+<h4>{{ i.grade2014 }}</h4>
+{% endfor %}

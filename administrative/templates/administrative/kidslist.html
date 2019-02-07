@@ -1,0 +1,10 @@
+
+{% extends 'administrative/base.html' %}
+{% block content %}
+{% for kid in kiddos %}
+<h2>hello</h2>
+<ul>
+  <li>{{kid.first_name}}</li>
+</ul>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>TSEC Hackathon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+.container{ 
+  text-align: center;
+  color: white;
+  }
+  .centered {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-weight:500;
+  
+  
+  font-size:44px;
+}
+.centered1 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:30px;
+  
+  
+  
+  
+}
+.button {
+text-decoration:none;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  position:absolute;
+  top:60%;
+  left:45%;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid #fff;
+  
+}
+button:hover{
+text-decoration:none;
+  background-color: #fff;
+  color:black;
+  }
+
+
+
+</style>
+</head>
+
+<body>
+
+
+<background class="w3-content w3-section" style="max-width:100%; background-size:cover;">
+
+<div class="container">
+  <img class="mySlides" src="motherteresa.jpg" style="width:100%; overflow:hidden; height:100%; position:absolute;opacity:0.8;">
+   <div class="centered">Together We Can Care For Orphans...</div>
+    <div class="centered1">Until they all have homes.</div>
+	
+ </div>
+ 
+ <div class ="container">
+  <img class="mySlides" src="kids.jpg" style="width:100% ; overflow:hidden;height:100%; position:absolute;opacity:0.8">
+     <div class="centered">Together We Can Care For Orphans...</div>
+    <div class="centered1">Until they all have homes.</div>
+	
+  </div>
+  <div class ="container">
+  <img class="mySlides" src="orphanage.jpg" style="width:100% ; overflow:hidden;height:100%;position:absolute;opacity:0.8">
+     <div class="centered">Together We Can Care For Orphans...</div>
+    <div class="centered1">Until they all have homes.</div>
+	
+  </div>
+  <button class="button ">
+  <a href="home.html" style="text-decoration:none;">ENTER SITE</a></button>
+</background>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

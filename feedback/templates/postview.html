@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% for looper in pv %}
+<h1>{{ looper.name }} created on {{ looper.created_date }}</h1>
+<h2>{{ looper.email }}</h2>
+<br>
+<h3>{{ looper.texts }}</h3>
+{% endfor %}
