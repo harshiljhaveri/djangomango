@@ -24,8 +24,8 @@ INSTALLED_APPS = [
     'supplies',
     'marketing',
     'fusioncharts',
-    #'feedback',
-    #'emailing,'
+    'feedback',
+    'emailing,'
 ]
 
 MIDDLEWARE = [
